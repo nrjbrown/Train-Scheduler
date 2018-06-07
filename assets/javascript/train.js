@@ -1,13 +1,18 @@
 $(document).ready(function(){
     //FIREBASE=========================================================
-    var config = {
-        apiKey: "",
-        authDomain: "",
-        databaseURL: "https://train-scheduler-fbd12.firebaseio.com/",
-        storageBucket: "",
-        messagingSenderId: ""
-      };
-    firebase.initializeApp(config);
+   
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAdsJ46T9A8MVWNkyLGLUoCrJNb983Z7KY",
+    authDomain: "train-scheduler-fbd12.firebaseapp.com",
+    databaseURL: "https://train-scheduler-fbd12.firebaseio.com",
+    projectId: "train-scheduler-fbd12",
+    storageBucket: "train-scheduler-fbd12.appspot.com",
+    messagingSenderId: "581541959405"
+  };
+  firebase.initializeApp(config);
+
     //VARIABLES=========================================================
     var database = firebase.database();
     //CONVERT TRAIN TIME================================================
